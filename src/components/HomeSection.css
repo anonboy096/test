@@ -1,0 +1,364 @@
+.hero-banner {
+  text-align: center;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+/* Headline Section */
+.headline-section {
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .main-headline {
+    font-weight: 900; /* Ensure max boldness */
+    font-size: 3rem;   /* Slightly smaller for mobile, adjust as needed */
+    /* Add thicker multi-layered text shadows for more boldness */
+    text-shadow:
+      2px 2px 4px rgba(44, 24, 16, 0.9),
+      -2px -2px 4px rgba(44, 24, 16, 0.9),
+      0 0 10px rgba(255, 107, 107, 0.8),
+      1px 1px 2px rgba(44, 24, 16, 1);
+  }
+}
+
+.main-headline {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #2c1810;
+  text-shadow:
+    3px 3px 6px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 107, 107, 0.6),
+    3px 3px 0 #2c1810, /* Dark shadow for thickness */
+    -1px -1px 0 #2c1810,
+    1px -1px 0 #2c1810,
+    -1px 1px 0 #2c1810;
+  margin-bottom: 0rem;
+  
+  animation: glow 2s ease-in-out infinite alternate;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 10;
+}
+
+.sub-headline {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.affectionate-line {
+  font-size: 1.3rem;
+  color: #ff6b6b;
+  margin-bottom: 0;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+
+/* Festive Divider */
+.festive-divider {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.festive-divider span {
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.festive-divider span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.festive-divider span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* Enhanced Photo Section */
+.childhood-photo {
+  margin: 0.5rem 0 1.5rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.photo-container {
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.photo-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  padding: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+.childhood-photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.photo-caption {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  margin-top: -8px;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.photo-caption p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c1810;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.upload-area {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px dashed #ff6b6b;
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.upload-area:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.upload-area p {
+  color: #2c1810;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Welcome Text */
+.introduction {
+  background: transparent;
+  padding: 2.5rem;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2c1810;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+}
+
+/* Call to Action Section */
+.cta-section {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.view-memories-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.view-memories-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(135deg, #ff5252, #ff7676);
+}
+
+.view-memories-btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+}
+
+.btn-text {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 107, 107, 0.6);
+  }
+  to {
+    text-shadow: 4px 4px 25px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 107, 107, 0.8), 0 0 60px rgba(255, 193, 7, 0.4);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2rem 0;
+    margin-top: 80px;
+  }
+  
+  .main-headline {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-headline {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .affectionate-line {
+    font-size: 1.1rem;
+  }
+  
+  .childhood-photo {
+    margin: 2rem 0;
+  }
+  
+  .photo-container {
+    max-width: 350px;
+  }
+  
+  .introduction {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .view-memories-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 1.5rem 0;
+    margin-top: 70px;
+  }
+  
+  .main-headline {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sub-headline {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .affectionate-line {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .childhood-photo {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .photo-container {
+    max-width: 300px;
+  }
+  
+  .photo-frame {
+    border-radius: 15px;
+    padding: 6px;
+  }
+
+  .photo-caption {
+    padding: 0.8rem;
+  }
+
+  .photo-caption p {
+    font-size: 1rem;
+  }
+  
+  .upload-area {
+    padding: 1.5rem 1rem;
+  }
+  
+  .upload-icon {
+    font-size: 2rem;
+  }
+  
+  .upload-area p {
+    font-size: 1rem;
+  }
+  
+  .introduction {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+  }
+
+  .view-memories-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-icon {
+    font-size: 1.2rem;
+  }
+} 

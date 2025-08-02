@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jinal-gift.vercel.app/sitemap.xml
